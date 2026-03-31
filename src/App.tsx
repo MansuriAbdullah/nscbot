@@ -84,7 +84,7 @@ const App: React.FC = () => {
           background: #000;
         }
         ::-webkit-scrollbar-thumb {
-          background: var(--primary-green);
+          background: var(--primary-color);
           border-radius: 10px;
           border: 2px solid #000;
         }

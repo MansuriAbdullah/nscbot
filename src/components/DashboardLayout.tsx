@@ -101,7 +101,7 @@ const DashboardLayout: React.FC<DashboardProps> = ({ onLogout }) => {
 
         .wallet-balance {
           background: rgba(0, 255, 65, 0.1);
-          border: 1px solid var(--primary-green);
+          border: 1px solid var(--primary-color);
           padding: 8px 16px;
           border-radius: 8px;
           font-weight: 800;
@@ -114,7 +114,7 @@ const DashboardLayout: React.FC<DashboardProps> = ({ onLogout }) => {
         }
 
         .usd {
-          color: var(--primary-green);
+          color: var(--primary-color);
           font-size: 0.8rem;
         }
 
@@ -134,7 +134,7 @@ const DashboardLayout: React.FC<DashboardProps> = ({ onLogout }) => {
           align-items: flex-end;
           padding: 30px;
           margin-bottom: 30px;
-          border: 1px solid var(--primary-green);
+          border: 1px solid var(--primary-color);
           box-shadow: 0 10px 40px rgba(0, 255, 65, 0.15);
         }
 
@@ -185,8 +185,8 @@ const DashboardLayout: React.FC<DashboardProps> = ({ onLogout }) => {
           content: '';
           position: absolute;
           top: 0; left: 0; width: 3px; height: 100%;
-          background: var(--primary-green);
-          box-shadow: 0 0 10px var(--primary-green);
+          background: var(--primary-color);
+          box-shadow: 0 0 10px var(--primary-color);
         }
 
         .stat-card p {
@@ -218,13 +218,13 @@ const DashboardLayout: React.FC<DashboardProps> = ({ onLogout }) => {
 
         .placeholder-card h3 {
           font-size: 1.5rem;
-          color: var(--primary-green);
+          color: var(--primary-color);
         }
 
         .pulse-dot {
           width: 15px;
           height: 15px;
-          background: var(--primary-green);
+          background: var(--primary-color);
           border-radius: 50%;
           position: relative;
         }
@@ -233,7 +233,7 @@ const DashboardLayout: React.FC<DashboardProps> = ({ onLogout }) => {
           position: absolute;
           width: 100%;
           height: 100%;
-          border: 1px solid var(--primary-green);
+          border: 1px solid var(--primary-color);
           border-radius: 50%;
           animation: badge-ring 2s infinite;
         }

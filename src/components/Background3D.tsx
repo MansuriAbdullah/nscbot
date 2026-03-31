@@ -70,7 +70,7 @@ const Background3D: React.FC = () => {
           mix-blend-mode: screen;
         }
         .nebula-1 {
-          background: radial-gradient(circle, var(--primary-green) 0%, transparent 70%);
+          background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
           top: -10%;
           left: -10%;
           animation: drift-slow 40s infinite alternate;
@@ -97,7 +97,7 @@ const Background3D: React.FC = () => {
           animation: twinkle 4s infinite alternate;
         }
         .dot-s { width: 1.5px; height: 1.5px; opacity: 0.5; }
-        .dot-m { width: 2.5px; height: 2.5px; background: var(--primary-green); box-shadow: 0 0 8px var(--primary-green); }
+        .dot-m { width: 2.5px; height: 2.5px; background: var(--primary-color); box-shadow: 0 0 8px var(--primary-color); }
         .dot-l { width: 3.5px; height: 3.5px; box-shadow: 0 0 12px #fff; }
         
         .far-parallax { animation: spin-parallax 300s linear infinite; }

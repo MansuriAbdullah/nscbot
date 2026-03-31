@@ -113,7 +113,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onLogout }) 
         }
 
         .sidebar-item.active {
-          background: var(--primary-green);
+          background: var(--primary-color);
           color: #000;
           box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
         }
@@ -133,7 +133,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onLogout }) 
         .status-toggle {
           margin-left: auto;
           background: rgba(0, 0, 0, 0.7);
-          color: var(--primary-green);
+          color: var(--primary-color);
           font-size: 0.75rem;
           padding: 4px 12px;
           border-radius: 20px;
@@ -161,7 +161,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, onLogout }) 
           width: 45px;
           height: 45px;
           border-radius: 50%;
-          background: var(--primary-green);
+          background: var(--primary-color);
           color: #000;
           display: flex;
           align-items: center;
