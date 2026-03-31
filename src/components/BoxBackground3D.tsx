@@ -25,7 +25,7 @@ const ParticleMesh = () => {
   return (
     <points ref={meshRef}>
       <bufferGeometry>
-        <bufferAttribute attach="attributes-position" count={particlesCount} array={positions} itemSize={3} />
+        <bufferAttribute attach="attributes-position" count={particlesCount} array={positions} itemSize={3} args={[positions, 3]} />
       </bufferGeometry>
       <pointsMaterial size={0.03} color="#00ff41" transparent opacity={0.8} sizeAttenuation />
     </points>
