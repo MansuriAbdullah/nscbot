@@ -346,17 +346,18 @@ const Withdrawal: React.FC = () => {
         .timeline-steps {
           display: flex;
           flex-direction: column;
-          gap: 25px;
+          gap: 30px;
           position: relative;
         }
         .timeline-steps::before {
           content: '';
           position: absolute;
-          left: 17px;
-          top: 10px;
-          bottom: 10px;
+          left: 19px;
+          top: 15px;
+          bottom: 15px;
           width: 2px;
-          background: linear-gradient(to bottom, var(--primary-orange), rgba(255, 77, 0, 0.2));
+          background: linear-gradient(to bottom, rgba(255, 77, 0, 0.1), var(--primary-orange), rgba(255, 77, 0, 0.1));
+          box-shadow: 0 0 15px var(--primary-orange);
         }
         .timeline-item {
           display: flex;
@@ -369,29 +370,37 @@ const Withdrawal: React.FC = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 36px;
-          height: 36px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
-          background: rgba(255, 77, 0, 0.15);
-          color: var(--primary-orange);
-          border: 1px solid rgba(255, 77, 0, 0.5);
-          box-shadow: 0 0 15px rgba(255, 77, 0, 0.3);
+          background: linear-gradient(135deg, var(--primary-orange), #ff4d00);
+          color: #fff;
+          border: 3px solid rgba(4, 12, 24, 1);
+          box-shadow: 0 0 20px rgba(255, 77, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.2);
           position: relative;
           z-index: 2;
           flex-shrink: 0;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .t-content {
-          background: linear-gradient(90deg, rgba(255, 77, 0, 0.05) 0%, transparent 100%);
-          border: 1px solid rgba(255, 77, 0, 0.15);
-          padding: 15px 20px;
-          border-radius: 15px;
+          background: rgba(4, 12, 24, 0.6);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 77, 0, 0.2);
+          border-left: 4px solid var(--primary-orange);
+          padding: 18px 22px;
+          border-radius: 12px;
           width: 100%;
-          transition: all 0.3s ease;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
         }
         .timeline-item:hover .t-content {
-          background: linear-gradient(90deg, rgba(255, 77, 0, 0.1) 0%, transparent 100%);
-          border-color: rgba(255, 77, 0, 0.3);
-          box-shadow: 0 10px 20px rgba(255, 77, 0, 0.05);
+          background: rgba(255, 77, 0, 0.08);
+          border-color: rgba(255, 77, 0, 0.4);
+          box-shadow: 0 10px 30px rgba(255, 77, 0, 0.15);
+        }
+        .timeline-item:hover .t-icon-box {
+          transform: scale(1.15) rotate(5deg);
+          box-shadow: 0 0 25px rgba(255, 77, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.5);
         }
         .timeline-step-title {
           color: var(--primary-orange);
@@ -415,10 +424,11 @@ const Withdrawal: React.FC = () => {
         @media (max-width: 480px) {
           .card-content-wrap { padding: 25px 20px; }
           .card-title { font-size: 1.4rem; }
-          .timeline-item { gap: 12px; }
-          .t-content { padding: 15px; }
-          .t-icon-box { width: 30px; height: 30px; }
-          .timeline-step-title { font-size: 1rem; }
+          .timeline-item { gap: 15px; }
+          .t-content { padding: 15px 18px; border-left-width: 3px; }
+          .t-icon-box { width: 34px; height: 34px; border-width: 2px; }
+          .timeline-steps::before { left: 16px; }
+          .timeline-step-title { font-size: 1.05rem; }
           .timeline-step-desc { font-size: 0.85rem; }
           .rule-item { font-size: 0.85rem; padding: 12px 15px; }
           .grid-title { font-size: 1.4rem; }

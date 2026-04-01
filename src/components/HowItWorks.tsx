@@ -80,12 +80,11 @@ const HowItWorks: React.FC = () => {
                 <div 
                   className="step-badge"
                   style={{ 
-                    background: step.color,
-                    boxShadow: `0 0 20px ${step.color}`
+                    background: `linear-gradient(135deg, ${step.color}, #ffffff)`,
+                    boxShadow: `0 5px 15px ${step.color}50`
                   }}
                 >
                   <span style={{ color: '#000' }}>{step.num}</span>
-                  <div className="badge-ring" style={{ border: `2px solid ${step.color}` }}></div>
                 </div>
               </div>
               <div className="step-content">
@@ -150,26 +149,19 @@ const HowItWorks: React.FC = () => {
           z-index: 2;
         }
         .step-badge {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
           font-weight: 900;
-          font-size: 1.4rem;
-          margin: 0;
+          font-size: 1.2rem;
           position: absolute;
-          bottom: -25px;
-          left: 50%;
-          transform: translateX(-50%);
+          top: 15px;
+          left: 15px;
           z-index: 3;
-        }
-        .badge-ring {
-          position: absolute;
-          inset: -4px;
-          border-radius: 50%;
-          animation: badge-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          border: 2px solid rgba(255, 255, 255, 0.2);
         }
         .step-title {
           font-size: 1.4rem;
@@ -182,10 +174,6 @@ const HowItWorks: React.FC = () => {
           font-size: 0.95rem;
           line-height: 1.6;
         }
-        @keyframes badge-pulse {
-          0% { transform: scale(1); opacity: 1; }
-          100% { transform: scale(1.5); opacity: 0; }
-        }
         @media (max-width: 992px) {
           .steps-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
         }
@@ -196,7 +184,7 @@ const HowItWorks: React.FC = () => {
         @media (max-width: 480px) {
           .section-title { font-size: 2rem; }
           .section-subtitle { font-size: 0.95rem; margin-bottom: 30px; }
-          .step-content { padding: 35px 20px 25px; }
+          .step-content { padding: 25px 20px; }
           .step-title { font-size: 1.25rem; }
           .step-desc { font-size: 0.85rem; }
         }

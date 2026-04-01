@@ -55,7 +55,7 @@ const Referral: React.FC = () => {
             <h3 className="grid-title">Referral Steps</h3>
             <div className="referral-steps">
               <div className="ref-step">
-                <div className="step-badge">1</div>
+                <div className="ref-badge">1</div>
                 <div className="step-content">
                   <h4>Share Your Link</h4>
                   <p>Get your unique referral code from dashboard and share it across networks.</p>
@@ -64,7 +64,7 @@ const Referral: React.FC = () => {
               <div className="step-line"></div>
               
               <div className="ref-step">
-                <div className="step-badge">2</div>
+                <div className="ref-badge">2</div>
                 <div className="step-content">
                   <h4>They Invest</h4>
                   <p>Your invitee registers using your code and activates any Bot or Plan.</p>
@@ -73,7 +73,7 @@ const Referral: React.FC = () => {
               <div className="step-line"></div>
               
               <div className="ref-step">
-                <div className="step-badge" style={{ background: 'var(--primary-orange)' }}>
+                <div className="ref-badge" style={{ background: 'var(--primary-orange)' }}>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
@@ -182,7 +182,7 @@ const Referral: React.FC = () => {
           position: relative;
           z-index: 2;
         }
-        .step-badge {
+        .ref-badge {
           background: var(--primary-blue);
           color: #000;
           width: 40px;
